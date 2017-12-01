@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import LineLoader from './Substance/LineLoader';
+import AnimatedLoader from './Substance/AnimatedLoader';
 import Button from './Substance/Button';
 
 export default class App extends React.Component {
@@ -25,7 +25,7 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        {this.state.busy && <LineLoader /> }
+        {this.state.busy && <AnimatedLoader /> }
 
           <Text>Hi!</Text>
           <Button onPress={this._buttonPressed} disabled={this.state.busy} />
