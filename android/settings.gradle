@@ -1,0 +1,3 @@
+rootProject.name = 'mokkoforms'
+
+include ':app'
