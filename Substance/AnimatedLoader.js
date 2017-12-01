@@ -12,7 +12,7 @@ export default class AnimatedLoader extends Component {
 
   render() {
     return (
-      <LottieView ref={animation => {this.animation = animation; }} loop={true} source={require('../Assets/preloader')} />
+      <LottieView zIndex={9999} ref={animation => {this.animation = animation; }} loop={true} source={require('../Assets/preloader')} />
     )
   }
 }
